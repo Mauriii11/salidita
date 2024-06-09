@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Invitación</title>
+    <style>
+        body {
+            background-color: pink;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>¡Te Invito a Salir Conmigo!</h1>
+        <h2>Hola Sol Nair Ayelen</h2>
+        <p>Pero me gustaría salir contigo y patear abuelos<span class="emoji">👺</span> y ver que soy más alto que vos<span class="emoji">🫱🏿‍🫲🏿🫵🏿</span>.</p>
+        <p>Ojalá podamos salir y no se quede en el ñembare'i. Me caes super bien y coincidimos, solo que a veces me haces la contra <span class="emoji">👺</span> o te enojas porque no soy un oso<span class="emoji">😭</span>. Pero espero conocerte y salir, <strong>AMÉN</strong>.<span class="emoji">🙌🏿</span></p>
+        <p>Fecha: No sé<br>
+           Lugar: tampoco</p>
+        <p> Pero me gustaría salir contigo.!</p>
+        <img src="SALIDA 2.jpg" alt="Descripción de la imagen" width="400" height="600">
+        <form id="formRespuesta">
+            <p>DE VERDAD QUERES SALIR CONMIGO?:</p>
+            <label for="si">Sí</label>
+            <input type="radio" id="si" name="respuesta" value="si">
+            <label for="no">No</label>
+            <input type="radio" id="no" name="respuesta" value="no">
+            <br>
+            <p>Por favor, justifica tu respuesta:</p>
+            <textarea id="justificacion" name="justificacion" rows="4" cols="50"></textarea>
+            <br>
+            <button type="submit">Enviar</button>
+            <button type="button" onclick="limpiarRespuesta()">Limpiar</button>
+        </form>
+    </div>
+
+    <script>
+        function limpiarRespuesta() {
+            document.getElementById("formRespuesta").reset();
+            document.getElementById("si").checked = false; // Desmarcar opción "Sí"
+            document.getElementById("no").checked = false; // Desmarcar opción "No"
+        }
+    </script>
+</body>
+</html>
